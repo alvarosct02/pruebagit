@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val tvHello = findViewById<TextView>(R.id.tv_hello)
         tvHello.text = "Hola mundo"
-        val imPlanets = findViewById<ImageView>(R.id.iv_main)
-        imPlanets.setImageResource(R.drawable.img_planets)
+        val ivPlanets = findViewById<ImageView>(R.id.iv_main)
+        ivPlanets.setImageResource(R.drawable.img_planets)
     }
 }
