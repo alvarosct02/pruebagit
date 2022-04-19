@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.kamiz.gitsample.databinding.ActivityMainBinding
 import com.kamiz.gitsample.databinding.FragmentBlankBinding
 import com.kamiz.gitsample.databinding.FragmentDetailBinding
@@ -29,6 +30,9 @@ class DetailFragment : Fragment() {
 
     fun setupViews() {
         binding.dummy.text = "Hola Maryam"
+        binding.btNavigate.setOnClickListener {
+            findNavController().navigate(R.id.action_detailFragment_to_greenFragment)
+        }
     }
 
 
