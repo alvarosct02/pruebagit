@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.kamiz.gitsample.databinding.ActivityLoginBinding
-import com.kamiz.gitsample.databinding.ActivityMainBinding
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
@@ -19,6 +18,9 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun setupViews() {
+        // TODO: remove.only for testing
+        binding.etUser.setText("Alvaro")
+
         binding.btLogin.setOnClickListener {
             loginUser(binding.etUser.text.toString(), binding.etPassword.text.toString())
         }
